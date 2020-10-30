@@ -1,0 +1,36 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+apply plugin: 'application'
+apply plugin: org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+mainClassName = 'com.techsharezone.dockubernetes.DockubernetesSpringBootApplication'
+
+group = 'com.techsharezone'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'com.techsharezone.dockubernetes.DockubernetesSpringBootApplication',
+		'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' ')
+	}
+}
+
