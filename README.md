@@ -36,7 +36,7 @@ ENTRYPOINT ["java", "-jar", "dockubernetes.jar"]
 - docker rmi dockubernetes saurabhshcs/dockubernetes //To remove your local images or associated local repositories
 - docker run -p 9006:9007 saurabhhscs/dockubernetes //once your docker-image has been pushed to the docker-hub then you can pull remote repository and run 
                                                       //your app/microservice from direct docker-hub by using this command.
-### Google Cloud Platform - Kuberneted Commands
+### Google Cloud Platform - Kubernetes Commands
 
 - Create an account on Google Cloud Platform
 - Go to the Kubernetes Engine
