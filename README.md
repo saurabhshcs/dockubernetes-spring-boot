@@ -1,3 +1,5 @@
+<img src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png" width="256" height="72"> <img src="https://www.freecodecamp.org/news/content/images/2020/10/gcp.png" width="256" height="100">  <img src="https://miro.medium.com/max/700/1*-uckV8DOh3l0bCvqZ73zYg.png" width="256" height="100">
+
 # dockubernetes-spring-boot
 > Simaple example of deploying a very simple spring-boot microservice into the Google Cloud Platform K8s using docker image.
 
