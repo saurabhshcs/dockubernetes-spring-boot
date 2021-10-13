@@ -36,7 +36,7 @@ ENTRYPOINT ["java", "-jar", "dockubernetes.jar"]
 - docker rmi dockubernetes saurabhshcs/dockubernetes //To remove your local images or associated local repositories
 - docker run -p 9006:9007 saurabhhscs/dockubernetes //once your docker-image has been pushed to the docker-hub then you can pull remote repository and run 
                                                       //your app/microservice from direct docker-hub by using this command.
-### MySQL setup and configurations for local environ
+### MySQL setup and configurations for local environment
 - Pull `MySQL` by running command `docker pull mysql` image from Official [MYSQL website](https://hub.docker.com/_/mysql)
 - Go to the `docker dashboard` then click on `image` section
 - Then click over the `run` option
