@@ -36,6 +36,14 @@ ENTRYPOINT ["java", "-jar", "dockubernetes.jar"]
 - docker rmi dockubernetes saurabhshcs/dockubernetes //To remove your local images or associated local repositories
 - docker run -p 9006:9007 saurabhhscs/dockubernetes //once your docker-image has been pushed to the docker-hub then you can pull remote repository and run 
                                                       //your app/microservice from direct docker-hub by using this command.
+### MySQL setup and configurations for local environ
+- Pull `MySQL` by running command `docker pull mysql` image from Official [MYSQL website](https://hub.docker.com/_/mysql)
+- Go to the `docker dashboard` then click on `image` section
+- Then click over the `run` option
+- It should run that `docker mysql image` and create an instance of the `mysql` on local container.
+- If it is not working then run this command `docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0.26`
+- Then go to the `Inspect` and get connetion details for your application configurations.
+
 ### Google Cloud Platform - Kubernetes Commands
 
 - Create an account on Google Cloud Platform
