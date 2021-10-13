@@ -23,7 +23,7 @@
     ADD target/dockubernetes.jar dockubernetes.jar  ///(This is the location of the produced jar file of your project. It may depend on your maven's pom.xml or 
 ENTRYPOINT ["java", "-jar", "dockubernetes.jar"]
 ```
-### Docker repositoryy setup
+### Docker repository setup
 - Go to https://hub.docker.com/ and download docker for desktop
 - Sign-up and either create repository manually on web or you can push the repository from local console.
 - Open terminal and type docker login
